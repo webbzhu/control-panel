@@ -1,0 +1,27 @@
+@media screen and (max-width: 992px) {
+	#domain-edit-actions{
+		display: block;
+	}
+    #cp-domain-edit-action-left{
+    	display: block;
+		width: 100%;
+		padding: 0;
+	}
+    #cp-domain-edit-action-right {
+    	display:block;
+		width: 100%;
+    }
+    .responsive-no-wrap-flex{
+    	flex-wrap: wrap;
+    }
+    
+	#cp-domain-edit-action-left .responsive-no-wrap-flex > *{
+		margin-bottom: 10px;
+	}
+	.cp-domain-edit-sc-settings-row-left{
+		line-height: 1.1rem;
+	}
+	.cp-domain-edit-sc-settings-row-left>div{
+		width: 100%;
+	}
+}

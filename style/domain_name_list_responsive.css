@@ -1,0 +1,51 @@
+@media (max-width: 550px){
+	.cp-dl-title{
+		display: none;
+	}
+
+	.cp-dl-search-box-filter>span:first-child{
+		display: none;
+	}
+
+	.cp-dl-search-box-filter>span:last-child{
+		display: inline;
+	}
+
+	#domain-name-list .cp-dl-search-box-row .dropdown-menu:before{
+	  left: 6%;
+	}
+
+	#domain-name-list .cp-dl-search-box-row .dropdown-menu:after{
+	  left: 6% ;
+	}
+
+	#domain-name-list{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.cp-dl-title{
+		display: none;
+	}
+}
+
+@media (min-width: 551px) and (max-width: 767px){
+	#domain-name-list{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.cp-dl-title{
+		display: none;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+}
+
+@media (min-width: 1200px){
+
+
+}

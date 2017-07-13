@@ -1,0 +1,18 @@
+@media (max-width: 767px){
+	#cp-overlay{
+		background-color: #FFF;	
+	}
+	
+	#cp-overlay-content-wrap{
+		border: none;
+		box-shadow: none;
+	}
+
+	#cp-top-title{
+		display: block;
+	}
+
+	#cp-top-menu{
+		display: block; 
+	}
+}

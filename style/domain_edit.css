@@ -1,0 +1,136 @@
+#domain-edit-actions {
+	display: table;
+}
+
+#cp-domain-edit-action-left {
+	display: table-cell;
+	padding: 0 10px 0 0;
+}
+
+#cp-domain-edit-action-right {
+	display: table-cell;
+	width: 100%;
+}
+
+#cp-domain-edit-action-note {
+	width: 100%;
+	height: 36px;
+	text-indent: 10px;
+	border: 1px solid #dae3e9;
+	outline: none;
+	border-right: none;
+}
+
+#cp-domain-edit-action-left .custom-select-wrap{
+	border: 1px solid #dae3e9;
+	max-width: 117px;
+}
+
+#cp-domain-edit-action-left .custom-select-wrap:not(:last-child) {
+	margin-right: 10px;
+}
+
+#domain-edit-actions,#cp-domain-edit-sc{
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(43, 59, 93, 0.3);
+}
+
+#domain-edit-content > div{
+	margin-top: 30px;
+	margin-left: 15px;
+	margin-right:15px;
+	overflow: hidden;
+}
+
+#cp-domain-edit-sc-nav .nav-tabs>li>a{
+	border-radius: 0;
+}
+#cp-domain-edit-sc-nav .nav-tabs{
+	border-color: #dae3e9;
+}
+#cp-domain-edit-sc-nav .nav-tabs>li.active>a, #cp-domain-edit-sc-nav .nav-tabs>li.active>a:focus, #cp-domain-edit-sc-nav .nav-tabs>li.active>a:hover {
+    border-color: #dae3e9;
+    border-bottom-color: transparent;
+}
+
+.cp-domain-edit-sc-settings-row{
+	padding: 28px 0;
+	overflow: hidden;
+	display: flex;
+}
+.cp-domain-edit-sc-settings-row:not(:last-child){
+	border-bottom: 1px solid #dae3e9;
+}
+.cp-domain-edit-sc-settings-row-left, .cp-domain-edit-sc-settings-row-right{
+	float: left;
+}
+.cp-domain-edit-sc-settings-row-right input[type="button"]{
+	float: right;
+}
+.cp-domain-edit-sc-settings-row-left>div{
+	float: left;
+}
+.cp-domain-edit-sc-settings-row-lable{
+	width: 24%;
+}
+.cp-domain-edit-sc-settings-row-info{
+	width: 76%;
+}
+.cp-domain-edit-tooltips .tooltip-inner{
+	max-width: 378px;
+    text-align: left;
+    padding: 25px;
+    font-size: 14px;
+}
+
+#domain-edit-email-settings input[type=text]{
+	width: 100%;	
+}
+
+#domain-edit-email-settings .email-settings-content{
+	overflow: hidden;
+}
+
+#domain-edit-email-settings .email-user{
+	width: 36.7%;
+	display: inline-block;
+	margin-right: 1.6%;
+}
+
+#domain-edit-email-settings .email-to{
+	width: 56.6%;
+	display: inline-block;
+	margin-right: 1.6%;
+}
+
+#domain-edit-email-settings .email-setting-delete{
+	width: 3.5%;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#domain-edit-email-settings .alia-row:not(:first-child) .row-lable{
+	display: none;
+}
+
+#domain-edit-email-settings .email-setting-mx-host{
+	width: 81.3%;
+	margin-right: 1.6%;
+	display: inline-block;
+}
+
+#domain-edit-email-settings .email-setting-mx-distance{
+	width: 12%;
+	margin-right: 1.6%;
+	display: inline-block;
+}
+
+#domain-edit-email-settings .email-setting-row:not(:last-child){
+	margin-bottom: 8px;
+}
+
+#email-settings-forward-add,#email-settings-mx-add{
+	cursor: pointer;
+}

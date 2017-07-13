@@ -1,0 +1,1016 @@
+.account-stats-row {
+    margin-left: 215px;
+}
+
+.name-services-content {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.name-service-function {
+    margin-top: 16px;
+}
+
+.add-name-server {
+    padding: 8px 18px;
+    font-size: 13px;
+    margin-top: 10px;
+    color: #fff;
+    background: #0076BF;
+    border-color: #0076BF;
+}
+
+.register-name-server {
+    padding: 8px 18px;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 8px;
+    color: #fff;
+    background: #0076BF;
+    border-color: #0076BF;
+}
+
+a.add-name-server:hover {
+    background: #0069a6;
+    color: #fff;
+    border-color: #0069a6;
+}
+
+a.register-name-server:hover {
+    background: #0069a6;
+    color: #fff;
+    border-color: #0069a6;
+}
+
+.delete-function {
+    padding-top: 20px;
+    margin-left: -10px;
+    height: 45px;
+}
+
+.submit-command-delete {
+    margin-left: 8px;
+    height: 28px;
+    background: #fff;
+    border: solid 1px #DAE3E9;
+    border-radius: 3px;
+    padding-top: 3px;
+    color: #0069a6;
+    margin-top: -3px;
+}
+
+.name-servers-column {
+    background: #fffbe8;
+}
+
+span #domain_select_count {
+    padding-right: 3px;
+    padding-left: 4px;
+}
+
+
+/*input[id^="myCheck"] + label[for^="myCheck"] {
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #DAE3E9;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 20px;
+    margin-top: 2px;
+}
+
+input[id^="myCheck"]:checked + label[for^="myCheck"] {
+    background-color: #fff;
+}
+
+input[id^="myCheck"]:checked + label[for^="myCheck"]:after {
+    content: "\f00c";
+    color: #0076BF;
+    font-family: FontAwesome;
+    position: relative;
+    top: -4px;
+}*/
+
+.edit-name-server {
+    background-color: #C9E9F8;
+    border-radius: 3px;
+    border: 1px solid #AED4EE;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.edit-name-server-content {
+    padding-top: 12px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+    line-height: 19px;
+}
+
+.edit-name-server-settings {
+    padding: 5px 12px;
+    font-size: 13px;
+    margin-top: -10px;
+    color: #fff;
+    background: #0076BF;
+    border-color: #0076BF;
+}
+
+.edit-name-server-settings:hover {
+    background: #0069a6;
+    color: #fff;
+    border-color: #0069a6;
+}
+
+.edit-name-server-settings:active {
+    background: #0069a6;
+    color: #fff;
+    border-color: #0069a6;
+}
+
+.edit-name-server-settings:focus {
+    background: #0069a6;
+    color: #fff;
+    border-color: #0069a6;
+    outline: none;
+}
+
+.edit-name-server-settings:active:focus {
+    background: #0069a6;
+    color: #fff;
+    border-color: #0069a6;
+    outline: none;
+}
+
+.name_server_top {
+    float: right;
+}
+
+.no_checkbox {
+    padding-left: 30px;
+}
+
+.delete_span {
+    margin-left: 8px;
+    color: #828EA6;
+    padding-top: 3px;
+}
+
+.span_show {
+    margin-left: 8px;
+}
+
+.host_name {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#overlay_add_name_server,
+#overlay_edit_name_server,
+#overlay_edit_name_server_setting,
+#overlay_register_name_server {
+    background-color: #EBEEF0;
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 20px;
+    z-index: 1150;
+    display: none;
+    overflow: auto;
+}
+
+.btn-x {
+    cursor: pointer;
+    font-size: 30px;
+    color: #9B9FA2;
+    position: absolute;
+    right: 30px;
+    top: 25px;
+}
+
+.overlay_add_server_logo {
+    height: 38px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 16px;
+    line-height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    "
+
+}
+
+.name_server_title {
+    text-align: center;
+    font-size: 18px;
+    color: #313C50;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.webpage {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.register_server_container,
+.add_server_container {
+    width: 700px;
+    position: absolute;
+    top: 80px;
+    text-align: left;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(43, 59, 93, 0.3);
+    border-radius: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+}
+
+.edit_server_container {
+    width: 700px;
+    height: auto;
+    position: absolute;
+    top: 80px;
+    text-align: left;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(43, 59, 93, 0.3);
+    border-radius: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+    overflow-y: scroll;
+}
+
+.list-underline {
+    border-bottom: solid 1px #A7B1C2;
+    margin-left: 30px;
+    width: calc(100% - 65px);
+    margin-bottom: 20px;
+}
+
+.function_button {
+    padding-left: 32px;
+    margin-bottom: 20px;
+}
+
+.edit_name_servers_function_button {
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.delete_select_servers {
+    float: right;
+    margin-top: -25px;
+    margin-right: -6px;
+}
+
+.delete_edit_new {
+    float: right;
+    margin-top: 8px;
+}
+
+.add_name_server_content {
+    padding-left: 15px;
+    font-size: 13px;
+    line-height: 20px;
+    padding-right: 15px;
+}
+
+.list-underline_buttom_select {
+    border-bottom: solid 1px #A7B1C2;
+    margin-left: 15px;
+    width: calc(100% - 35px);
+    margin-bottom: 16px;
+    margin-top: 35px;
+}
+
+.list-underline_buttom {
+    border-bottom: solid 1px #A7B1C2;
+    margin-left: 30px;
+    width: calc(100% - 65px);
+    margin-bottom: 16px;
+    margin-top: 35px;
+}
+
+.form-control {
+    border: 1px solid #D8DFE5;
+    border-radius: 3px;
+}
+
+.radio {
+    margin-top: 5px;
+    margin-bottom: 8px;
+    padding-left: 32px;
+}
+
+input#enternameserver {
+    margin-top: 2px;
+}
+
+.dns_name_servers {
+    padding-top: 20px;
+}
+
+span.fa.fa-trash-o {
+    color: #333;
+    font-size: 18px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.select_servers_span {
+    margin-top: 6px;
+    float: left;
+    margin-right: 8px;
+    padding-left: 5px;
+}
+
+.form_display {
+    display: inline-block;
+    width: 92%;
+}
+
+.edit_new_span {
+    margin-right: 10px;
+}
+
+.delete_domain_record {
+    float: right;
+    margin-top: -25px;
+}
+
+.delete_subdomain_record {
+    float: right;
+    margin-top: -25px;
+}
+
+.delete_mx_record {
+    float: right;
+    margin-top: -25px;
+    margin-right: -12px;
+}
+
+.custom_dns_content_title {
+    margin-top: 5px;
+    padding-left: 0px;
+}
+
+.custom_dns_content {
+    padding-left: 0px;
+    margin-top: 8px;
+}
+
+.subdomain_form {
+    width: 97%;
+}
+
+.tooltip-inner {
+     max-width: 378px;
+    text-align: left;
+    padding: 25px;
+    font-size: 14px;
+    border-radius: 3px;
+    opacity: 0.9;
+}
+
+.tooltip-arrow {
+    opacity: 0.9;
+}
+
+.save_apply_all_doman_button {
+    display: inline-block;
+}
+
+.domain-list-area {
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(43, 59, 93, 0.3);
+}
+
+.table {
+    margin-bottom: -1px;
+}
+
+.domain-list-area>.table-responsive>.table-hover>tbody>tr:hover {
+    background-color: #fffbe8
+}
+
+.domain-list-area>.table-responsive>.table-hover>tbody>.dl-select-all-row:hover,
+.domain-list-area>.table-responsive>.table-hover>tbody>.dl-delete-all-row:hover {
+    background-color: transparent;
+}
+
+.dl-select-all {
+    padding: 5px 5px;
+    margin-left: -5px;
+    margin-right: 13px;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid #DAE3E9;
+}
+
+.dl-delete-all {
+    background-color: #F5F6F7;
+    padding: 5px 10px 5px 5px;
+    margin-left: -5px;
+    border: 1px solid #DAE3E9;
+    border-radius: 3px 0 0 3px;
+    color: #828EA6;
+    cursor: pointer;
+}
+
+#dl-delete-all-checkbox:before {
+    content: "\f068";
+    color: #0076BF;
+    font-family: FontAwesome;
+    position: relative;
+    top: -2px;
+}
+
+.domain-list-area>.table-responsive>.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    border-bottom: 1px solid #ddd;
+    border-top: none;
+    white-space: nowrap;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.domain-list-area>.table-responsive>.table>tbody>.dl-select-all-row>td,
+.domain-list-area>.table-responsive>.table>tbody>.dl-delete-all-row>td {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.dl-delete-all-row {
+    display: none;
+}
+
+.domain-list-area>.table-responsive>.table>tbody>tr>td:nth-last-child(2) {
+    text-align: left;
+}
+
+.checkbox-label {
+    height: 16px;
+    width: 16px;
+    border-radius: 3px;
+    border: 1px solid #DAE3E9;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 20px;
+    margin-top: 2px;
+}
+
+.domain-list-area input[type="checkbox"] {
+    display: none;
+}
+
+.domain-list-area input[id^="dl_"]:checked + label[for^="dl_"] {
+    background: #fff;
+}
+
+.domain-list-area input[id^="dl_"]:checked + label[for^="dl_"]:after {
+    content: "\f00c";
+    color: #0076BF;
+    font-family: FontAwesome;
+    position: relative;
+    top: -4px;
+}
+
+.checkbox_a {
+    margin-left: 20px;
+}
+
+.no_checkbox_a {
+    margin-left: 36px;
+    text-decoration: none;
+}
+div#ovelay_add_nameserver_error_content{
+    color: red;
+    padding-left: 28px;
+}
+
+ #ovelay_register_nameserver_error_content  {
+    color: red;
+    padding-left: 10px;
+ }
+
+#overlay_reg_name_server_error {
+    color: red;
+    padding-left: 32px;
+}
+
+/*sumoselect css*/
+
+.SumoSelect p {
+    margin: 0;
+}
+
+.SelectBox {
+    padding: 5px 8px;
+}
+
+.sumoStopScroll {
+    overflow: hidden;
+}
+
+.SumoSelect .hidden {
+    display: none;
+}
+
+.SumoSelect .search-txt {
+    display: none;
+    outline: none;
+}
+
+.SumoSelect .no-match {
+    display: none;
+    padding: 6px;
+}
+
+.SumoSelect.open .search-txt {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 5px 8px;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.SumoSelect.open>.search>span,
+.SumoSelect.open>.search>label {
+    visibility: hidden;
+}
+
+.SelectClass,
+.SumoUnder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+
+/*.SelectClass {
+    z-index: 1;
+    #f3f4f6
+}*/
+
+.SumoSelect > .optWrapper > .options li.opt label,
+.SumoSelect > .CaptionCont,
+.SumoSelect .select-all > label {
+    user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.SumoSelect {
+    display: inline-block;
+    position: relative;
+    outline: none;
+    margin-left: 7px;
+    width: 93%;
+}
+
+.SumoSelect:focus > .CaptionCont,
+.SumoSelect:hover > .CaptionCont,
+.SumoSelect.open > .CaptionCont {
+    box-shadow: 0 0 2px #4BB0EF;
+    border-color: #4BB0EF;
+}
+
+.SumoSelect > .CaptionCont {
+    position: relative;
+    border: 1px solid #d3dbe3;
+    height: 34px;
+    background-color: #f5f6f7;
+    border-radius: 3px;
+    margin: 0;
+    padding-left: 10px;
+    color: #1a1a19;
+}
+
+.SumoSelect > .CaptionCont > span {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: default;
+    /*margin-top: -4px;*/
+}
+
+.SumoSelect > .CaptionCont > label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+}
+
+.SumoSelect > .CaptionCont > label > i {
+    background-image: url(/account/selection-arrow.png);
+    background-position: center center;
+    background-size: 9px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+.SumoSelect > .optWrapper {
+    display: none;
+    z-index: 1000;
+    top: 30px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.11);
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+}
+
+.SumoSelect.open > .optWrapper {
+    top: 34px;
+    display: block;
+}
+
+.SumoSelect.open > .optWrapper.up {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 5px;
+}
+
+.SumoSelect > .optWrapper ul {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+
+.SumoSelect > .optWrapper > .options {
+    border-radius: 2px;
+    position: relative;
+    max-height: 215px;
+}
+
+.SumoSelect > .optWrapper > .options li ul li.opt {
+    padding-left: 22px;
+}
+
+.SumoSelect > .optWrapper.multiple > .options li ul li.opt {
+    padding-left: 50px;
+}
+
+.SumoSelect > .optWrapper > .options li.opt {
+    position: relative;
+    border-radius: 2px;
+    height: 30px;
+}
+
+.SumoSelect > .optWrapper > .options li.opt:hover {
+    background-color: #0076BF;
+    color: #fff;
+}
+
+.SumoSelect > .optWrapper > .options li label {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+    padding-left: 10px;
+    line-height: 30px;
+}
+
+.SumoSelect > .optWrapper > .options li span {
+    display: none;
+}
+
+
+@media (max-width: 549px) {
+    .save_apply_all_doman_button {
+        display: block;
+        margin-left: -5px;
+        margin-top: 10px;
+    }
+    .name_server_top {
+        float: left;
+    }
+    .account-stats-row {
+        margin-left: -15px;
+    }
+    .name_servers_font {
+        font-size: 18px;
+        margin-top: 16px;
+    }
+    .page-footer-contact-copyright {
+        margin-top: 25px;
+    }
+    .dl-select-all {
+        margin-left: -8px;
+        margin-right: 12px;
+    }
+    .checkbox_a {
+        margin-left: 12px;
+    }
+    .no_checkbox_a {
+        margin-left: 32px;
+        text-decoration: none;
+    }
+    .span_show {
+        margin-left: 0px;
+    }
+    .register_server_container,
+    .add_server_container,
+    .edit_server_container {
+        width: calc(100% - 36px);
+    }
+    #overlay_add_name_server,
+    #overlay_register_name_server,
+    #overlay_edit_name_server,
+    #overlay_edit_name_server_setting {
+        top: 0px;
+        background-color: #fff;
+    }
+    .tips_info {
+        line-height: 18px;
+    }
+    .list-underline_buttom {
+        margin-top: 28px;
+    }
+    .webpage {
+        margin-top: 5px;
+    }
+    .list-underline {
+        margin-bottom: 15px;
+    }
+    .host_name {
+        margin-top: 5px;
+    }
+    .register_server_container,
+    .add_server_container,
+    .edit_server_container {
+        box-shadow: none;
+        border-radius: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .list-underline {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+    }
+    .list-underline_buttom {
+        margin-left: 15px;
+        width: calc(100% - 30px);
+    }
+    .add_name_server_content {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .function_button {
+        padding-left: 15px;
+    }
+    .edit_name_servers_function_button {
+        padding-left: 15px;
+    }
+    span.fa.fa-trash-o {
+        margin-left: 4px;
+    }
+    .SumoSelect {
+        width: 85% !important;
+    }
+    .form_display {
+        width: 84%;
+    }
+    #edit_new .col-xs-12 {
+        padding-right: 10px;
+    }
+    #select_servers .col-xs-12 {
+        padding-right: 10px;
+    }
+    .delete_select_servers {
+        float: none;
+        margin-right: -5px;
+    }
+    .edit_new_span {
+        margin-right: 6px;
+    }
+    .select_servers_span {
+        margin-right: 3px;
+        padding-left: 4px;
+    }
+    .SumoSelect > .CaptionCont {
+        padding-left: 5px!important;
+    }
+    .SumoSelect > .CaptionCont > label > i {
+        left: 10px !important;
+    }
+    .SumoSelect > .optWrapper > .options li label {
+        padding-left: 5px !important;
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .delete_domain_record {
+        margin-right: -6px;
+    }
+    .delete_subdomain_record {
+        margin-right: -6px;
+    }
+    .delete_mx_record {
+        margin-right: -13px;
+    }
+    .delete_edit_new {
+        float: none;
+        margin-left: 6px !important;
+    }
+    .table-responsive {
+        border: none;
+    }
+
+    .SumoSelect > .CaptionCont > span {
+    margin-top: 0px;
+}
+
+
+
+.SumoSelect > .optWrapper > .options {
+   
+    max-height: 163px;
+}
+div#ovelay_add_nameserver_error_content {
+    color: red;
+    padding-left: 15px;
+}
+#ovelay_register_nameserver_error_content  {
+    color: red;
+    padding-left: 0px;
+ }
+
+ #overlay_reg_name_server_error {
+    color: red;
+    padding-left: 18px;
+}
+.delete_span {
+    display: none;
+}
+
+.register-name-server {
+    margin-left: 1px;
+}
+
+
+}
+
+@media (max-width: 767px) and (min-width: 550px) {
+    .register_server_container,
+    .add_server_container,
+    .edit_server_container {
+        width: calc(100% - 36px);
+    }
+    .name_servers_font {
+        float: left;
+        font-size: 18px;
+        margin-top: 16px;
+    }
+    .account-stats-row {
+        margin-left: -15px;
+    }
+    #overlay_add_name_server,
+    #overlay_register_name_server,
+    #overlay_edit_name_server,
+    #overlay_edit_name_server_setting {
+        top: 0px;
+        background-color: #fff;
+    }
+    .tips_info {
+        line-height: 18px;
+    }
+    .register_server_container,
+    .add_server_container,
+    .edit_server_container {
+        box-shadow: none;
+        border-radius: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .list-underline {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+    }
+    .list-underline_buttom {
+        margin-left: 15px;
+        width: calc(100% - 30px);
+    }
+    .add_name_server_content {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .function_button {
+        padding-left: 15px;
+    }
+    .edit_name_servers_function_button {
+        padding-left: 15px;
+    }
+    span.fa.fa-trash-o {
+        margin-left: 4px;
+    }
+    .delete_select_servers {
+        float: none;
+        margin-right: 0px;
+    }
+    .SumoSelect {
+        width: 89% !important;
+    }
+    .form_display {
+        width: 88%;
+    }
+    .delete_edit_new {
+        float: none;
+        margin-left: 8px !important;
+    }
+    .subdomain_form {
+        width: 93%;
+    }
+    .table-responsive {
+        border: none;
+    }
+    div#ovelay_add_nameserver_error_content{
+    color: red;
+    padding-left: 15px;
+}
+
+#ovelay_register_nameserver_error_content  {
+    color: red;
+    padding-left: 0px;
+ }
+
+ #overlay_reg_name_server_error {
+    color: red;
+    padding-left: 18px;
+}
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .account-stats-row {
+        margin-left: 195px;
+    }
+    .name_servers_font {
+        font-size: 18px;
+        margin-top: 16px;
+        float: left;
+    }
+}
+
+@media ( min-width: 1025px) {
+    .name_servers_font {
+        font-size: 18px;
+        margin-top: 16px;
+        float: left;
+    }
+}
