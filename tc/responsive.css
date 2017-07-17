@@ -22,7 +22,7 @@
         float: left;
     }
     .account-stats-row {
-        margin-left: -15px;
+        margin-left: 0px;
     }
     .navbar-icon-style {
         margin-top: -5px;
@@ -241,7 +241,7 @@
         padding-top: 10px;
     }
     .account-stats-row {
-        margin-left: -15px;
+        margin-left: 0px;
     }
     .dropdown-menu-items-support {
         margin-left: -80px;
@@ -368,7 +368,7 @@
 
 @media ( min-width : 768px) and (max-width: 1024px) {
     .account-stats-row {
-        margin-left: 195px;
+        margin-left: 210px;
     }
     .fa-user-message {
         display: none !important;
