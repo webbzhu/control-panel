@@ -58,7 +58,9 @@
         $('#cp-overlay-close').click(function () {
             closeOverlay();
         });
-        init();
+        if(null != null){
+        	init();
+        }
         $('#cp-overlay').fadeIn(500);
     }
 
