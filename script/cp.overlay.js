@@ -46,8 +46,19 @@
     	}
     }
 
-    $.DynaCP.Overlay.createOverlay = function (content, init) {
+    $.DynaCP.Overlay.createOverlay = function () {
         closeOverlay();
+        if(arguments.length ==0){
+            return;
+        }
+        if(arguments.length > 2){
+            return;
+        }
+        var content = arguments[0];
+        var init=null;
+        if(arguments.length==2){
+            init = arguments[1];
+        }
         var overlay = $('<div id="cp-overlay"></div>'), logoRow = $('<div id="cp-overlay-logo"><img src="/tc/navbar-logo.png"></div>');
         var wrap = $('<div id="cp-overlay-content-wrap"></div>'), close = $('<div id="cp-overlay-close"><span class="fa fa-close"></span></div>');
         wrap.html(content);
@@ -58,8 +69,8 @@
         $('#cp-overlay-close').click(function () {
             closeOverlay();
         });
-        if(null != null){
-        	init();
+        if(init != null){
+            init();
         }
         $('#cp-overlay').fadeIn(500);
     }
