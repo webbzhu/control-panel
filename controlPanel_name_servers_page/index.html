@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>control panel name servers</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/name-services.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/sumoselect.css" /> -->
+    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sumoselect.js"></script>
+    <script type="text/javascript" src="js/sidebar-menu.js"></script>
+    <script type="text/javascript" src="js/name-services.js"></script>
+</head>
+
+<body>
+    <!-- navbar top -->
+    <div class="navbar-fixed-top">
+        <nav class="navbar navbar-content" style="height: 40px;">
+            <div class="container-fluid" style="height:40px;background: #2A333E;">
+                <!--
+        
+                    <a href="#" class="sign-in pull-left" >
+                       Sign in
+                    </a>
+                    
+                   -->
+                <!-- after sign in-->
+                <ul class="nav navbar-nav top-function-icon" style="margin-left: -10px;">
+                    <li class="fa-bell-notification-order">
+                        <a href="#" class="navbar-block dropdown-toggle navbar-icon-style" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-bell fa-1 navbar-msg-read"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-items" style="min-width: 310px;">
+                            <li class="dropdown-header dropdown-header-info">NOTIFICATIONS
+                            </li>
+                            <li class="divider"></li>
+                            <a href="#">
+                                <div class="notifications-domain-msg">
+                                    <span>Expiring Domains: 9 (1 new)</span><span class="fa fa-angle-right pull-right span-arrow"></span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="notifications-order-no-msg">
+                                    <span>Pending Orders: 1</span><span class="fa fa-angle-right pull-right span-arrow"></span>
+                                </div>
+                            </a>
+                            <!-- <div style="text-align: center;margin-top: 40px;margin-bottom: 40px;">You have no new notifications</div> -->
+                            <li class="divider"></li>
+                            <a href="#">
+                                <div class="view-button-notification">
+                                    View Notifications
+                                </div>
+                            </a>
+                        </ul>
+                    </li>
+                    <li class="fa-envelope-message">
+                        <a href="#" class="dropdown-toggle navbar-block navbar-icon-style" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-envelope fa-1 navbar-msg-unread">&nbsp;<span class="dropmenu-data">20</span></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-items" style="min-width: 310px;">
+                            <li class="dropdown-header dropdown-header-info">MESSAGES
+                            </li>
+                            <li class="divider"></li>
+                            <a href="#">
+                                <div class="inbox-info-msg">
+                                    <span>Unread: 4 (1 new)</span><span class="fa fa-angle-right pull-right span-arrow"></span>
+                                </div>
+                            </a>
+                            <!-- <div style="text-align: center;margin-top: 40px;margin-bottom: 40px;">You have no new messages</div> -->
+                            <li class="divider"></li>
+                            <a href="#">
+                                <div class="view-button-notification">
+                                    View Inbox
+                                </div>
+                            </a>
+                        </ul>
+                    </li>
+                    <li class="name-message">
+                        <a href="#" class="dropdown-toggle title-function" data-toggle="dropdown" style="color:#A7B1C2;" aria-expanded="false">
+                        Luke Burgess&nbsp;&nbsp;<span class="fa fa-angle-down"></span>
+                    </a>
+                        <ul class="dropdown-menu topbar-function-dropdown dropdown-menu-items" style="min-width: 310px;">
+                            <div style="margin: 20px 20px">
+                                <div class="pull-left">
+                                    <span class="fileinput-button">
+                                     <div id="user_dropdown_avatar_uploader_button">
+                                          <div  class="ng-binding">Update Photo</div>
+                                       </div>
+                                    <img src="img/avatar.png"  class="avatar-photo">
+                                    <input id="fileupload" type="file"  name="image-upload-thumbnail" id="image-upload-thumbnail" data-url="/edit/sitebuild_media_image_thumbnail">
+                                  </span>
+                                </div>
+                                <div style="margin-left: 90px;line-height: 18px;">
+                                    <div style="font-size: 15px;">Luke Burgess</div>
+                                    <div style="font-size: 12px;color: #707070;">lukelburgess@gmail.com</div>
+                                    <div style="margin-top: 7px;">
+                                        <a href="#" class="btn btn-primary btn-lg view-dashboard">View Dashboard</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div>upload image too larger </div> -->
+                            <li class="divider"></li>
+                            <li style="margin-top: 15px;"><a href="#">Account Info</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li style="margin-bottom: 15px;"><a href="#">Sign Out</a></li>
+                        </ul>
+                    </li>
+                    <!--suit for  small screen -->
+                    <li class="fa-user-message">
+                        <a href="#" class="navbar-block dropdown-toggle navbar-icon-style" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-user navbar-msg-read" style="font-size: 15px;"></i>
+                        </a>
+                        <ul class="dropdown-menu topbar-function-dropdown dropdown-menu-items" style="width: 310px;">
+                            <div style="margin: 20px 20px;">
+                                <div class="pull-left">
+                                    <span class="fileinput-button">
+                                    <img src="img/avatar.png"  style="width: 74px;height: 74px;" class="avatar-photo">
+                                    <input id="fileupload1" type="file"  name="image-upload-thumbnail" id="image-upload-thumbnail" data-url="/edit/sitebuild_media_image_thumbnail">
+                            </span>
+                                </div>
+                                <div style="margin-left: 90px;line-height: 18px;">
+                                    <div style="font-size: 15px;">Luke Burgess</div>
+                                    <div style="font-size: 12px;color: #707070;">lukelburgess@gmail.com</div>
+                                    <div style="margin-top: 7px;">
+                                        <a href="#" class="btn btn-primary btn-lg view-dashboard">View Dashboard</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <li class="divider"></li>
+                            <!-- /*<div style="text-align: center;margin-top: 40px;margin-bottom: 40px;">You have no new messages</div>*/ -->
+                            <li>
+                                <a href="#" style="color: #333;"><span class="pull-left">Notifications </span><span class="pull-right">10 <font color="red">(1 NEW)</font></span></a>
+                            </li>
+                            <li style="margin-bottom: 10px;">
+                                <a href="#" style="color: #333;"><span class="pull-left">Messages </span><span class="pull-right">4 <font color="red">(1 NEW)</font></span></a>
+                            </li>
+                            <li class="divider"></li>
+                            <li style="margin-top: 12px;"><a href="#">Account Info</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li style="margin-bottom: 12px;"><a href="#">Sign Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right top-function" style="margin-right: -10px;">
+                    <li>
+                        <a href="#" style="color:#A7B1C2;" class="navbar-block dropdown-toggle title-function" data-toggle="dropdown" aria-expanded="false">
+                        SUPPORT&nbsp;&nbsp;<span class="fa fa-angle-down"></span>
+                    </a>
+                        <ul class="dropdown-menu topbar-function-dropdown dropdown-menu-items dropdown-menu-items-support support-menu-width">
+                            <li class="dropdown-header dropdown-header-info">SUPPORT OPTIONS
+                            </li>
+                            <li class="divider"></li>
+                            <a href="#" target="_blank" onclick="popup('/de/chat/login.html','pop_chat','600','500'); return false;">
+                                <div class="support-option-chat-online">
+                                    <i class="fa fa-comment"></i>&nbsp;&nbsp;
+                                    <span class="dropmenu-data">Chat: Online</span><span class="fa fa-angle-right pull-right span-arrow"></span>
+                                </div>
+                            </a>
+                            <!--   <div class="support-option-chat-offline">
+                         <span class="fa fa-comment"></span>&nbsp;&nbsp;<span class="dropmenu-data">Chat: Offline</span>
+                        </div> -->
+                            <li class="divider"></li>
+                            <li class="itemspace-top"><a href="#">Help Files</a></li>
+                            <li><a href="#">Forums</a></li>
+                            <li class="itemspace-bottom"><a href="#">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" style="color:#A7B1C2;" class="dropdown-toggle title-function" data-toggle="dropdown" aria-expanded="false">EN &nbsp;&nbsp;<span class="fa fa-angle-down"></span></a>
+                        <ul class="dropdown-menu topbar-function-dropdown dropdown-menu-items dropdown-menu-items-en">
+                            <li class="dropdown-header dropdown-header-info">LANGUAGE
+                            </li>
+                            <li class="divider"></li>
+                            <li class="itemspace-top">
+                                <a href="#">Español</a>
+                            </li>
+                            <li>
+                                <a href="#">中文</a>
+                            </li>
+                            <li>
+                                <a href="#">العربية</a>
+                            </li>
+                            <li>
+                                <a href="#">Deutsch</a>
+                            </li>
+                            <li>
+                                <a href="#">Português</a>
+                            </li>
+                            <li>
+                                <a href="#">Français</a>
+                            </li>
+                            <li class="itemspace-bottom">
+                                <a href="#">Русский</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" style="color:#A7B1C2;" class="dropdown-toggle title-function" data-toggle="dropdown" aria-expanded="false">USD&nbsp;$ &nbsp;&nbsp;<span class="fa fa-angle-down"></span></a>
+                        <ul class="dropdown-menu topbar-function-dropdown dropdown-menu-items dropdown-menu-items-usd">
+                            <li class="dropdown-header dropdown-header-info">CURRENCY
+                            </li>
+                            <li class="divider"></li>
+                            <li class="itemspace-top">
+                                <a href="#">USD-U.S. Dollar ($)</a>
+                            </li>
+                            <li>
+                                <a href="#"> EUR-Euro (€)</a>
+                            </li>
+                            <li>
+                                <a href="#">CNY-人民币 (¥)</a>
+                            </li>
+                            <li class="itemspace-bottom">
+                                <a href="#">CAD-Canadian Dollar (C$)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle navbar-block navbar-icon-style" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-shopping-cart shoppding-cart-msg-unread" style="font-size: 15px;">&nbsp;<span class="dropmenu-data">2</span></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-items dropdown-menu-items-shoppingcard" style="width: 230px;">
+                            <li class="dropdown-header dropdown-header-info">SHOPPING CART
+                            </li>
+                            <li class="divider"></li>
+                            <table class="table-shoppingcard">
+                                <tbody>
+                                    <tr>
+                                        <td class="table-shoppingcard-items">Items</td>
+                                        <td class="table-shoppingcard-value pull-right">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-shoppingcard-subtotal">Subtotal</td>
+                                        <td class="table-shoppingcard-total pull-right">$21.98</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <li class="divider"></li>
+                            <div class="view-card-item">
+                                <a href="#" class="btn btn-primary btn-lg view-cart">View Cart</a>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- top bar function -->
+        <div style="margin-top: -30px;">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid sub-navbar">
+                    <div class="navbar-header">
+                        <a href="#" class="navbar-logo">
+                            <img src="img/logo.png">
+                        </a>
+                        <a class="navbar-toggle-menu pull-right hidden-lg hidden-md navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <i class="fa fa-bars fa-2" style="color:#515B6F;font-size: 18px;"></i>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right site-content-top">
+                            <li>
+                                <a href="#" class="dropdown-toggle site-function" data-toggle="dropdown" aria-expanded="false">
+                        DOMAINS&nbsp;&nbsp;<span class="fa fa-angle-down fa-item-right"> </span> 
+                    </a>
+                                <ul class="dropdown-menu site-function-dropdown bullet-right">
+                                    <li class="site-function-items-top"><a href="#">SEARCH</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li><a href="#">TRANSFER</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li><a href="#">PRIVACY</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li><a href="#">SECURITY</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li><a href="#">GRACE DELETION</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li><a href="#">API</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li><a href="#">IDNS</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li><a href="#">TLD PRICES</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li class="site-function-items-buttom"><a href="#">PREORDER</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-line"></li>
+                            <li>
+                                <a href="#" class="dropdown-toggle site-function" data-toggle="dropdown" aria-expanded="false">WEBSITES&nbsp;&nbsp;<span class="fa fa-angle-down fa-item-right"></span>
+                        </a>
+                                <ul class="dropdown-menu site-function-dropdown bullet-right">
+                                    <li class="site-function-items-top"><a href="#">OVERVIEW</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li><a href="#">TEMPLATES</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li class="site-function-items-buttom"><a href="#">PRICES</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-line"></li>
+                            <li>
+                                <a href="#" class="dropdown-toggle site-function" data-toggle="dropdown" aria-expanded="false">HOSTING&nbsp;&nbsp;<span class="fa fa-angle-down fa-item-right"></span></a>
+                                <ul class="dropdown-menu site-function-dropdown bullet-right">
+                                    <li class="site-function-items-top"><a href="#">VPS HOSTING</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li><a href="#">EMAIL HOSTING</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li class="site-function-items-buttom"><a href="#">SSL</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-line"></li>
+                            <li>
+                                <a href="#" class="dropdown-toggle site-function" data-toggle="dropdown" aria-expanded="false">DOMAIN MARKET&nbsp;&nbsp;
+                        <span class="fa fa-angle-down fa-item-right"></span></a>
+                                <ul class="dropdown-menu site-function-dropdown bullet-right">
+                                    <li class="site-function-items-top"><a href="#">OVERVIEW</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li><a href="#">AUCTIONS</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li><a href="#">MARKETPLACE</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li class="site-function-items-buttom"><a href="#">BACKORDERS</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-line"></li>
+                            <!-- my account-->
+                            <li class="hidden-lg hidden-md hidden-sm" style="margin-bottom: -10px;">
+                                <a href="#" class="dropdown-toggle site-function" data-toggle="dropdown" aria-expanded="false">MY ACCOUNT&nbsp;&nbsp;
+                        <span class="fa fa-angle-down fa-item-right"></span></a>
+                                <ul class="dropdown-menu site-function-dropdown bullet-right">
+                                    <li class="site-function-items-top"><a href="#">SUMMARY</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li><a href="#">MY DOMAINS</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li><a href="#">MY WEBSITES</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li><a href="#">MY HOSTING</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li><a href="#">MY SSL</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li><a href="#">MY MARKETPLACE</a></li>
+                                    <li class="menu-line-sub"></li>
+                                    <li><a href="#">MY INFO</a></li>
+                                </ul>
+                            </li>
+                            <li class="temp-account">
+                                <a href="" style="text-decoration: underline; color: #333333; padding-left: 15px;">
+                        MY ACCOUNT 
+                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- alet bar -->
+        <!-- alert promote -->
+        <!--   <div class="alert-promote">
+            <span class="fa fa-close close-alert-bar" id="close-alert-promote-bar"></span>
+            <span>
+               <b>Sale!</b> Get your <a href="#">.Me</a> starting from just $1.99 today! </span>
+        </div> -->
+        <!-- alert-info -->
+        <!--   <div class="alert-site-maintenance">
+            <span class="fa fa-close close-alert-site-bar" id="close-alert-site-bar"></span>
+            <span>
+               <b>SITE MAINTENANCE:</b> Save your work. Site will be down in 04:48 </span>
+        </div> -->
+    </div>
+    <!-- the sidebar menu-->
+    <div class="sidebar pull-left">
+        <ul class="sidebar-menu">
+            <li class="sidebar-menu-top"> </li>
+            <li class="treeview active">
+                <a href="#">
+                    <i class="fa fa-home"></i> <span>Summary</span>
+                </a>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-globe"></i> <span>My Domains</span> <i class="fa fa-angle-down pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="#">Manage</a></li>
+                    <li><a href="#">Name Servers</a></li>
+                    <li><a href="#">Contact Records</a></li>
+                    <li><a href="#">Folders</a></li>
+                    <li><a href="# ">New Domains</a></li>
+                    <li><a href="#">Inactive Domains</a></li>
+                    <li><a href="#">Domain Defaults</a></li>
+                    <li><a href="#">TLD Settings</a></li>
+                    <li><a href="#">DNSSEC</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-paint-brush"></i>
+                    <span>My Websites</span>
+                </a>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-server"></i>
+                    <span>My Hosting</span>
+                </a>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-lock"></i>
+                    <span>My SSL</span>
+                </a>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-tags"></i> <span>My Marketplace</span> <i class="fa fa-angle-down pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="#">Active Listings</a></li>
+                    <li><a href="#">Closed Listings</a></li>
+                    <li><a href="#">Auction Bids</a></li>
+                    <li><a href="#">Backorder Requests</a></li>
+                    <li><a href="#">Default Payment Settings</a></li>
+                    <li><a href="#">IPS</a></li>
+                    <li><a href="#">Watchlist</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-wrench"></i> <span>Tools</span> <i class="fa fa-angle-down pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="#">Data Analyzer</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Suggestion</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-user"></i> <span>My Info</span> <i class="fa fa-angle-down pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="#">Account Info</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Order Log</a></li>
+                    <li><a href="#">Credit Cards</a></li>
+                    <li><a href="#">Payment Log</a></li>
+                    <li><a href="#">Refer-a-Friend</a></li>
+                    <li><a href="#">Account Statement</a></li>
+                    <!-- <li><a href="#">Auto-Renew Settings</a></li> -->
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- main side home page-->
+    <div class="main-content">
+            <div class="account-stats-row">
+
+                <div class="name-services-content">
+
+                    <div class="name-service-function">
+                        <div class="name_servers_font">Name Servers</div>
+
+                        <div class="name_server_top">
+                            <a class="btn btn-primary add-name-server" href="#" id="add_name_server">
+                             Add Name Server
+                         </a>
+                            <a class="btn btn-primary register-name-server" href="#" id="register_name_server">
+                             Register Name Server
+                         </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12" style="padding-right: 0px;padding-left: 0px;margin-top: 10px;line-height: 18px;">
+                        Here are all the name serviers in your account. To change the name servers for All the domains that are using a specific name server,click on the "[show]" link. Then in the blue box that appears,click the "Edit Name Server Settings" button
+                    </div>
+
+               <!-- <div class="col-xs-12" style="margin-top:10px;">
+                <div class="alert alert-danger alert-dismissible " style="background-color:#F9D3CF;border:1px solid #F3A69E;" role="alert">
+                    <button class="close" style="opacity: 0.6;" type="button" data-dismiss="alert"><i class="fa fa-times"></i><span class="sr-only">Close</span></button>
+                    <p style="font-weight:500;margin-bottom: 0px;font-size:14px;">Could not change bulk name server settings:</p>
+                    <ul style="margin-bottom: 0px;padding-left: 30px;">
+                        <li>The domains using the name server cn1.robyn.uk may be expired or don't have the name server as it's "currently active" selection. Please either renew your domain, or, in the blue box below, click on each domain name to change its name server settings.</li>
+                    </ul>
+                </div>
+            </div> -->
+
+
+                    <div class="col-xs-12 edit-name-server">
+                        <div class="edit-name-server-content">
+                            The name server 'b.b' is being used by the following domains/settings in this account: &amp;lt;<a href="/account/domain/setting/server.html">default</a>&amp;gt; <a href="/account/domain/name/server.html?domain_id=3100583">dynadot.ag</a> <a href="/account/domain/name/server.html?domain_id=2984256">dynadot.bz</a> <a href="/account/domain/name/server.html?domain_id=3849919">dynadot.ca</a> <a href="/account/domain/name/server.html?domain_id=3834009">dynadot.fail</a> <a href="/account/domain/name/server.html?domain_id=2962238">dynadot.fm</a> <a href="/account/domain/name/server.html?domain_id=3184526">dynadot.l.lc</a> <a href="/account/domain/name/server.html?domain_id=3100582">dynadot.lc</a> <a href="/account/domain/name/server.html?domain_id=3100581">dynadot.lt</a> <a href="/account/domain/name/server.html?domain_id=3251857">dynadot.mn</a> <a href="/account/domain/name/server.html?domain_id=3962569">dynadot.ninja</a> <a href="/account/domain/name/server.html?domain_id=4460353">dynadot.pub</a> <a href="/account/domain/name/server.html?domain_id=3458411">dynadot.sc</a> <a href="/account/domain/name/server.html?domain_id=4836100">dynadot.store</a> <a href="/account/domain/name/server.html?domain_id=3044168">dynadot.sx</a> <a href="/account/domain/name/server.html?domain_id=3458413">dynadot.vc</a> <a href="/account/domain/name/server.html?domain_id=3248854">dynadot.xn--fiqs8s</a> <a href="/account/domain/name/server.html?domain_id=4914272">dynadot1.xyz</a> <a href="/account/domain/name/server.html?domain_id=3988490">dynadot13.com</a> <a href="/account/domain/name/server.html?domain_id=3988491">dynadot14.com</a> <a href="/account/domain/name/server.html?domain_id=3988492">dynadot15.com</a> <a href="/account/domain/name/server.html?domain_id=3988493">dynadot16.com</a> <a href="/account/domain/name/server.html?domain_id=3988494">dynadot17.com</a> <a href="/account/domain/name/server.html?domain_id=4780651">dynadot3.co</a> <a href="/account/domain/name/server.html?domain_id=2672762">dynadot5.com</a> <a href="/account/domain/name/server.html?domain_id=3152488">namesp.in</a> <a href="/account/domain/name/server.html?domain_id=3152489">namewhirl.com</a> <a href="/account/domain/name/server.html?domain_id=3369102">xn--6fro42a44m.cn</a> <a href="/account/domain/name/server.html?domain_id=3388516">xn--6fro42a44m.com</a> <a href="/account/domain/name/server.html?domain_id=3388517">xn--6fro42a44m.net</a> <a href="/account/domain/name/server.html?domain_id=3369101">xn--6fro42a44m.xn--fiqs8s</a>
+                            <br>
+                            <br>
+                            <!-- <form method="post" action="#"> -->
+                            <input type="button" name="command" value="Edit Name Server Settings" class="btn btn-primary edit-name-server-settings">
+                        </div>
+                    </div>
+
+
+                    <form method="post" autocomplete="off" action="">
+                        <div class="domain-list-area col-xs-12">
+                            <div class="table-responsive">
+                                <table cellspacing="0" cellpadding="0" class="table table-hover">
+                                    <tbody>
+
+                                        <tr class="dl-delete-all-row">
+                                            <td colspan="3">
+                                                <span class="dl-delete-all">
+                                 <label class="checkbox-label" id="dl-delete-all-checkbox"></label>
+                                 <span id="domain_select_count">0</span> name server selected
+                                                </span>
+
+                                                <input type="submit" name="command" value="Delete" class="btn submit-command-delete">
+                                                <span class="delete_span">Delete selected name servers</span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="dl-select-all-row">
+                                            <td>
+                                                <span class="dl-select-all">
+                                  <label class="checkbox-label" ></label> 
+                                 
+                                  </span>
+                                                <b>Name Server </b>
+                                            </td>
+                                            <td><b>IP Address</b></td>
+                                            <td><b>In Use</b></td>
+                                        </tr>
+                                        
+                                     
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="dl_select_491" id="dl_select_491" />
+                                                <label class="checkbox-label" for="dl_select_491"></label>
+                                                <a href="/de/account/domain/server/edit_reg.html?server_id=0" class="checkbox_a">domain-haha159.com</a>
+                                            </td>
+                                            <td>192.168.1.1</td>
+                                            <td>NO</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="select_domain" id="dl_select_93" />
+                                                <label class="checkbox-label" for="dl_select_93"></label>
+                                                <span class="checkbox_a">domain.com</span>
+                                            </td>
+                                            <td>192.168.1.1</td>
+                                            <td>NO</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                
+                                                <span class="no_checkbox_a">domain-haha159.com</span>
+                                            </td>
+                                            <td>192.168.1.1</td>
+                                            <td>YES &nbsp;<a href="#"> Show</a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <a href="#" class="no_checkbox_a">domain-haha159.com</a>
+                                            </td>
+                                            <td></td>
+                                            <td>YES &nbsp;<a href="#"> Show</a></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="select_domain" id="dl_select_191" />
+                                                <label class="checkbox-label" for="dl_select_191"></label>
+                                                <a href="#" class="checkbox_a">domain-haha159.com</a>
+                                            </td>
+                                            <td>192.168.1.1</td>
+                                            <td>NO</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="select_domain" id="dl_select_91" />
+                                                <label class="checkbox-label" for="dl_select_91"></label>
+                                                <a href="#" class="checkbox_a">domain-haha159.com</a>
+                                            </td>
+                                            <td>192.168.1.1</td>
+                                            <td>NO</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" name="select_domain" id="dl_select_92" />
+                                                <label class="checkbox-label" for="dl_select_92"></label>
+                                                <a href="#" class="checkbox_a">domain-haha159.com</a>
+                                            </td>
+                                            <td>192.168.1.1</td>
+                                            <td>NO</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                
+                                                <a href="#" class="no_checkbox_a">domain-haha159.com</a>
+                                            </td>
+                                            <td>192.168.1.1</td>
+                                            <td>YES &nbsp;<a href="#"> Show</a></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    <!-- Copyright and contact -->
+    <div class="copyright-contact">
+        <div class="col-xs-12 page-footer-contact-copyright">
+            <div class="page-footer-contact">
+                <ul class="contact-content">
+                    <li>
+                        <a href="#">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Price List
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Service Agreement
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Registrant Rights
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            UDRP
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Whios
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 page-footer-copyright">
+                Copyright © 2002-2016 Dynadot LLC. All rights reserved.
+            </div>
+        </div>
+    </div>
+    <!-- overlay -->
+    <div id="overlay_add_name_server">
+        <div class="container">
+            <div class="row">
+                <span class="fa fa-close btn-x" id="btn_x"></span>
+                <div>
+                    <img src="img/logo.png" class="overlay_add_server_logo">
+                </div>
+                <div class="add_server_container">
+                    <h3 class="name_server_title">Add Name Server</h3>
+                    <div class="list-underline"></div>
+                    <div class="add_name_server_content">
+
+
+                        <div class="col-xs-12 tips_info">
+                            Use this to add your hosting provider's nameservers to the system.
+                        </div>
+                        <div class="col-xs-12 tips_info">
+                            Enter the host name of the name server you want to add. For example,'ns1.your-isp.net'.
+                        </div>
+                        <div class="col-xs-12 webpage">
+                            Webpage to forward to
+                        </div>
+                        <div class="col-xs-12">
+                            <input type="text" name="" class="form-control" id="form_name_server">
+                        </div>
+                    </div>
+
+                    <div style="height: 35px;color: red;padding-left: 28px;" id="ovelay_add_nameserver_error_content"></div>
+                    <div class="list-underline_buttom col-xs-12"></div>
+
+                    <div class="function_button">
+                        <a class="btn btn-default" id="cancel_overlay" href="#" style="margin-top: 3px;color: #0078bd;padding:8px 15px;font-size: 13px;">Cancel</a>
+                        <button id="add_name_server_button" disabled="true" class="btn btn-primary" style="padding:8px 10px;font-size: 13px;margin-left: 5px;margin-top: 3px;color: #828EA6;background: #F5F6F7;border-color: #D3DBE2;">Add Name Server</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- edit_name_server overlay -->
+    <div id="overlay_edit_name_server">
+        <div class="container">
+            <div class="row">
+                <span class="fa fa-close btn-x" id="btn_name_x"></span>
+                <div>
+                    <img src="img/logo.png" class="overlay_add_server_logo">
+                </div>
+                <div class="add_server_container" id="edit_name_server_content">
+
+
+                
+                    <div id="edit_reg_name_content">
+                    <h3 class="name_server_title">Edit Registered Name Server</h3>
+                    <div class="list-underline"></div>
+                    <div class="add_name_server_content">
+                        <div class="col-xs-12" style="font-size: 14px;">
+                            Host Name: <span style="font-weight: 600;">16.delete-me.inamepro.com</span>
+                        </div>
+                        <div class="col-xs-12 webpage">
+                            IP Addresses
+                        </div>
+                        <form>
+                            <div class="col-xs-12">
+                                <input type="text" name="" class="form-control" id="form_name_server" value="1.1.1.1">
+                            </div>
+                            <div class="col-xs-12" style="margin-top: 12px;">
+                                <input type="text" name="" class="form-control" id="form_name_server">
+                            </div>
+                            <div class="col-xs-12" style="margin-top: 12px;">
+                                <input type="text" name="" class="form-control" id="form_name_server">
+                            </div>
+                            <div class="col-xs-12" style="margin-top: 12px;">
+                                <input type="text" name="" class="form-control" id="form_name_server">
+                            </div>
+                            <div class="col-xs-12" style="margin-top: 12px;">
+                                <input type="text" name="" class="form-control" id="form_name_server">
+                            </div>
+                            <div class="col-xs-12" style="margin-top: 12px;">
+                                <input type="text" name="" class="form-control" id="form_name_server">
+                            </div>
+                            <div class="col-xs-12" style="margin-top: 12px;">
+                                <input type="text" name="" class="form-control" id="form_name_server">
+                            </div>
+                            <div class="col-xs-12" style="margin-top: 12px;">
+                                <input type="text" name="" class="form-control" id="form_name_server">
+                            </div>
+                            <div class="col-xs-12" style="margin-top: 12px;">
+                                <input type="text" name="" class="form-control" id="form_name_server">
+                            </div>
+                            <div class="col-xs-12" style="margin-top: 12px;">
+                                <input type="text" name="" class="form-control" id="form_name_server">
+                            </div>
+
+                        </form>
+                    </div>
+                    <div style="height: 35px;color: red;padding-left: 28px;" id="ovelay_unlock_error_content"></div>
+
+                    <div class="list-underline_buttom col-xs-12"></div>
+                    <div class="function_button">
+                        <a class="btn btn-default" id="cancel_edit_name_server_overlay" href="#" style="margin-top: 3px;color: #0078bd;padding:8px 13px;font-size: 13px;">Cancel</a>
+                        <button id="add_name_server_button" class="btn btn-primary able_account_button" style="padding:8px 13px;font-size: 13px;margin-left: 5px;margin-top: 3px;color: #828EA6;background: #F5F6F7;border-color: #D3DBE2;">Submit</button>
+                    </div>
+
+                   </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="overlay_register_name_server">
+       <span class="fa fa-close btn-x" id="btn_register_x"></span>
+                <div>
+                    <img src="img/logo.png" class="overlay_add_server_logo">
+                </div>
+
+        <div class="container">
+            <div class="row">
+                
+
+                <div class="register_server_container">
+                    <h3 class="name_server_title">Register Name Server</h3>
+                    <div class="list-underline"></div>
+                    <div class="add_name_server_content">
+                        <div class="col-xs-12 tips_info">
+                            Use this if you want to run your own name server using one of the domains in your account.
+                        </div>
+                        <div class="col-xs-12 tips_info">
+                            You can register your own name servers with the registry here.
+                        </div>
+                        <div class="col-xs-12 host_name">
+                            Host Name
+                        </div>
+                        <div class="col-xs-12">
+                            <input type="text" name="" class="form-control" id="form_host_name">
+                        </div>
+                        <div class="col-xs-12" style="margin-top: 10px;margin-bottom: 5px;">
+                            IP Address
+                        </div>
+                        <div class="col-xs-12">
+                            <input type="text" name="" class="form-control" id="form_ip_address">
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12" id="ovelay_register_nameserver_error_content">
+
+                    <ul id="overlay_register_name_server_error">
+                    
+                    <li>
+
+                    The name server you entered is not in the correct format. An example of a valid name server is 'ns1.your-domain.com'.
+                    </li>
+                   <!--  <li>
+                     You did not enter a valid IP address. An example of an IP address is 207.44.214.87.
+                     </li> -->
+                    </ul>
+
+                    </div>
+
+                    <div class="list-underline_buttom col-xs-12"></div>
+
+                    <div class="function_button">
+                        <a class="btn btn-default" id="cancel_register" href="#" style="margin-top: 3px;color: #0078bd;padding:8px 15px;font-size: 13px;">Cancel</a>
+                        <button id="register_name_server_button" disabled="true" class="btn btn-primary" style="padding:8px 10px;font-size: 13px;margin-left: 5px;margin-top: 3px;color: #828EA6;background: #F5F6F7;border-color: #D3DBE2;">Register Name Server</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay_edit_name_server_setting">
+    <span class="fa fa-close btn-x" id="btn_edit_x"></span>
+                <div>
+                    <img src="img/logo.png" class="overlay_add_server_logo">
+                </div>
+        <div class="container">
+            <div class="row">
+                
+                <div class="edit_server_container">
+
+
+
+
+                    <!-- for domain -->
+                    <h3 class="name_server_title">DNS Settings</h3>
+                    <!-- for folder -->
+                   <!--  <h3 class="name_server_title">Folder DNS Settings <a href="#" data-toggle="tooltip" data-placement="bottom" title='Synchronize DNS Settings of all domains in this folder.'> <span class="fa fa-question-circle" style="color: #0078BD;font-size: 13px;"></span></a>
+                    </h3> -->
+                    <div class="list-underline"></div>
+
+                    <div class="add_name_server_content">
+                        <!-- single domain -->
+                        <!--  <div class="col-xs-12" style="font-weight: 500;">
+                           <span style="font-size: 14px;font-weight: 400;">Domian:</span>  DYNADOT.COM
+                        </div> -->
+                        <!-- multiple domains -->
+                        <div style="font-weight: 500;">
+                            <div class="col-xs-12">
+                                <span style="font-size: 15px;font-weight: 400;">Domians:</span> DYNADOT.COM DYNADOT.COM DYNADOT.COM DYNADOT.COM DYNADOT.COM
+                            </div>
+                            <div class="col-xs-12" style="display: none;" id="more_domains">
+                                DYNADOT.COM DYNADOT.COM DYNADOT.COM DYNADOT.COM DYNADOT.COM DYNADOT.COM DYNADOT.COM DYNADOT.COM DYNADOT.COM DYNADOT.COM DYNADOT.COM DYNADOT.COM DYNADOT.COM DYNADOT.COM DYNADOT.COM DYNADOT.COM DYNADOT.COM DYNADOT.COM DYNADOT.COM DYNADOT.COM
+                            </div>
+                            <a href="#" id="show_more" style="text-decoration: none;margin-left: 15px;">Show More </a>
+                        </div>
+                        <!-- for Folder -->
+                        <!-- <div class="col-xs-12" style="font-weight: 500;">
+                           <span style="font-size: 14px;font-weight: 400;">Folder:</span>  FOLDER1
+                        </div> -->
+
+                        <div class="col-xs-12" style="margin-top: 12px;width: 225px;margin-left: -7px;">
+                            <select class="SlectBox" id="selectdata" autocomplete="off" name="selectName">
+                                <option value="1">Name Servers</option>
+                                <option value="2">Parking</option>
+                                <option value="3">Forwarding</option>
+                                <option value="4">Stealth Forwarding</option>
+                                <option value="5">Dynadot Hosting</option>
+                                <option value="6">Custom DNS</option>
+                                <option value="7">Free Hosting</option>
+                                <option value="8">Website Builder</option>
+                            </select>
+                        </div>
+
+                        <!-- name servers -->
+                        <div id="select_name_servers">
+                           <!--  <div class="col-xs-12 dns_name_servers">
+                                <input type="checkbox" name="">
+                                <span style="margin-left: 5px;">Apply this DNS setting to future domains that you move into this folder.</span>
+                            </div> -->
+                            <div class="col-xs-12 dns_name_servers">
+                                Hosting elsewhere. Enter your hosting provider's name server names. (<a href="#">manage name servers</a>)
+                            </div>
+
+                            <div class="col-xs-12 radio" style="margin-top: 10px;">
+                                <input type="radio" name="enternameserver" id="enternameserver" value="1" checked> Enter new or existing Name Servers. <a href="#" style="text-decoration: none;">What are name servers?</a>
+                            </div>
+
+                            <div id="edit_new">
+                                <div class="col-xs-12">
+                                    <span class="edit_new_span"> 1 </span>
+                                    <input type="text" name="glue_user2_server_0" class="form-control form_display" id="enter_new_name_servers_0">
+                                </div>
+
+                                <div class="col-xs-12" style="margin-top: 12px;">
+                                    <span class="edit_new_span"> 2 </span>
+                                    <input type="text" name="glue_user2_server_1" class="form-control form_display" > <span class="fa fa-trash-o delete_edit_new"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xs-12" style="margin-top: 10px;">
+                                <a href="#" style="text-decoration: none;" id="add_edit_new">Add Server</a>
+                            </div>
+
+                            <div class="col-xs-12 radio" style="margin-top: 10px;">
+                                <input type="radio" name="enternameserver" id="selectnameservervalue" value="2"> Select from your Name Servers
+                            </div>
+
+                            <div id="select_servers">
+
+
+                                <div class="col-xs-12" style="margin-left: -7px;margin-top: 5px;">
+                                    <span class="select_servers_span">1</span>
+                                    <select class="SlectBox"  name="glue_user_server_0" id = "select-name-servers-0" style="width: 99%;">
+                                        <option value="-1">select name servers</option>
+                                        <option value="1" selected="selected" >Parking</option>
+                                        <option value="2">Forwarding</option>
+                                        <option value="3">Stealth Forwarding</option>
+                                        <option value="4">Dynadot Hosting</option>
+                                        <option value="5">Custom DNS</option>
+                                        <option value="6">Free Hosting</option>
+                                        <option value="7">Website Builder</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-xs-12" style="margin-left: -7px;margin-top: 12px;">
+                                    <span class="select_servers_span">2</span>
+                                    <select class="SlectBox" id="selectnameservers1" name="glue_user_server_1" style="width: 99%;">
+                                        <option>select name servers</option>
+                                        <option value="1">Parking</option>
+                                        <option value="2">Forwarding</option>
+                                        <option value="3">Stealth Forwarding</option>
+                                        <option value="4">Dynadot Hosting</option>
+                                        <option value="5">Custom DNS</option>
+                                        <option value="6">Free Hosting</option>
+                                        <option value="7">Website Builder</option>
+                                    </select>
+                                    <span class="fa fa-trash-o delete_select_servers"></span>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-xs-12" style="margin-top: 10px;">
+                                <a href="#" style="text-decoration: none;" id="add_select_servers">Add Server</a>
+                            </div>
+
+                            <div style="height: 35px;color: red;padding-left: 28px;" id="ovelay_unlock_error_content"></div>
+
+                            <div class="list-underline_buttom_select col-xs-12"></div>
+
+
+                            <div class="edit_name_servers_function_button col-xs-12">
+                                <a class="btn btn-default" id="cancel_edit" href="#" style="margin-top: 3px;color: #0078bd;padding:8px 15px;font-size: 13px;">Cancel</a>
+                                <button id="save_name_server_button" disabled="true" class="btn btn-primary" style="padding:8px 10px;font-size: 13px;margin-left: 5px;margin-top: 3px;color: #828EA6;background: #F5F6F7;border-color: #D3DBE2;">Save Name Server
+                                </button>
+                                <!-- <input type="button" name="domain-edit-renew-options-save" value="Save Name Server" class="cp-overlay-action" id="name-servres-dns-setting-save" disabled> -->
+
+                                <!-- for Folder dns Settings -->
+                                <!--  <div class="save_apply_all_doman_button">
+                                <button id="register_name_server_button"  class="btn btn-primary" style="padding:8px 10px;font-size: 13px;margin-left: 5px;margin-top: 3px;color: #828EA6;background: #F5F6F7;border-color: #D3DBE2;">Save and Apply to All Domains</button>
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <!-- Parking -->
+                        <div id="select_name_parking" style="display: none;">
+                            <div class="col-xs-12 dns_name_servers">
+                                Parking a domain (otherwise known as domain parking) means you have your domain name point to a placeholder web page which tells visitors that this domain has already been taken. Most people use this feature to provide a temporary page for visitors to see while they decide what to do with their domain. <a href="#" style="text-decoration: none;">View a sample parking page</a>.
+                            </div>
+
+                            <div class="col-xs-12" style="margin-top: 12px;">
+                                Dynadot provides this service free of charge when you register or transfer a domain name to us.
+                            </div>
+                            <div class="list-underline_buttom_select col-xs-12"></div>
+
+                            <div class="edit_name_servers_function_button col-xs-12">
+                                <a class="btn btn-default" id="parking_cancel" href="#" style="margin-top: 3px;color: #0078bd;padding:8px 15px;font-size: 13px;">Cancel</a>
+                                <button id="parking_name_server_button" class="btn btn-primary add-name-server" style="padding:8px 10px;margin-left: 5px;margin-top: 3px;">Park Domain</button>
+                            </div>
+                        </div>
+
+
+                        <!-- forwarding -->
+                        <div id="select_name_forwarding" style="display: none;">
+                            <div class="col-xs-12 dns_name_servers">
+                                Forward your domain to another webpage (ie http://www.mysite.com/me.html).
+                                <a href="#" style="text-decoration: none;">what is forwarding?</a>
+                            </div>
+                            <div class="col-xs-12 webpage">
+                                Webpage to Forward to
+                            </div>
+                            <div class="col-xs-12">
+                                <input type="text" name="" class="form-control" id="forwarding_form_text">
+                            </div>
+
+                            <div class="col-xs-12" style="margin-top: 12px;">
+                                <a href="#" style="text-decoration: none;">Forward Status Code</a>
+                            </div>
+
+                            <div class="col-xs-12 radio" style="margin-top: 5px;">
+                                <input type="radio" name="enterforwarding" id="enterforwarding_temporarily" checked>302 Redirect - Temporarily moved
+                            </div>
+
+                            <div class="col-xs-12 radio">
+                                <input type="radio" name="enterforwarding " id="enterforwarding_permanently ">301 Redirect - Permanently moved
+                            </div>
+
+                            <div class="list-underline_buttom_select col-xs-12 " style="margin-top: 28px; "></div>
+
+
+                            <div class="edit_name_servers_function_button col-xs-12 ">
+                                <a class="btn btn-default " id="forwarding_cancel " href="# " style="margin-top: 3px;color: #0078bd;padding:8px 15px;font-size: 13px;">Cancel</a>
+                                <button id="register_name_server_button " disabled="true " class="btn btn-primary " style="padding:8px 10px;font-size: 13px;margin-left: 5px;margin-top: 3px;color: #828EA6;background: #F5F6F7;border-color: #D3DBE2; ">Forward Domain</button>
+                            </div>
+
+                        </div>
+                        <!-- stealth forwarding -->
+                        <div id="select_stealth_forwarding" style="display: none; ">
+                            <div class="col-xs-12 dns_name_servers ">
+                            Stealth forward your domain to another webpage. The browser will show your domain, but load a different webpage (ie http://www.freepage.com/me/index.html).
+
+                              <a href="# " style="text-decoration: none; ">what is stealth forwarding</a>?
+                            </div>
+
+                            <div class="col-xs-12 webpage">
+                            Webpage to forward to
+                           </div>
+                            <div class="col-xs-12">
+                                <input type="text" name=" " class="form-control" id="stealth_forward_form_text">
+                            </div>
+                            <div class="col-xs-12 webpage">
+                            Title of website
+                           </div>
+
+                            <div class="col-xs-12 ">
+                                <input type="text " name=" " class="form-control" id="stealth_website_title_form_text">
+                            </div>
+                            <div class="col-xs-12 dns_name_servers">
+                            Stealth forwarding uses frames which may interfere with search engine rankings. The title that you enter above will be inserted into
+                            the frameset to help your ranking. Also, the url displayed in the browser address bar never changes no matter what page you are on; it 
+                            will always display http://www.mysite.com for example.
+
+                              
+                            </div>
+
+                             <div class="list-underline_buttom_select col-xs-12 "></div>
+                            <div class="edit_name_servers_function_button col-xs-12 ">
+                                <a class="btn btn-default " id="stealth_forwarding_cancel" href="# " style="margin-top: 3px;color: #0078bd;padding:8px 15px;font-size: 13px; ">Cancel</a>
+                                <button id="stealth_forward_domain_button" disabled="true " class="btn btn-primary " style="padding:8px 10px;font-size: 13px;margin-left: 5px;margin-top: 3px;color: #828EA6;background: #F5F6F7;border-color: #D3DBE2; ">Stealth Forward Domain</button>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Dynadot Hosting -->
+                        <div id="select_dynadot_hosting" style="display: none; ">
+                             <div class="col-xs-12 dns_name_servers ">
+                            Choose this option if you have Dynadot Hosting for your domain.
+                            </div>
+                            <div class="col-xs-12 radio " style="margin-top: 13px;margin-left: 8px; ">
+                                <input type="radio" name="enterdynadothosting" id="enter_email_hosting" checked>Email Hosting
+                            </div>
+                            <div class="col-xs-12 radio" style="margin-left: 8px;">
+                                <input type="radio" name="enterdynadothosting" id="enter_advanced_hosting">Advanced Hosting
+                            </div>
+                             <div class="col-xs-12 " style="margin-top: 10px;">
+                            To use the included email hosting with your web hosting, choose the "Do not forward email " option in the Email Forwarding Setting.
+                            Email forwarding settings in your Web Hosting account area will still be active.
+                            </div>
+
+                            <div class="list-underline_buttom_select col-xs-12 "></div>
+                            <div class="edit_name_servers_function_button col-xs-12 ">
+                                <a class="btn btn-default " id="dynadot_hosting_cancel " href="# " style="margin-top: 3px;color: #0078bd;padding:8px 15px;font-size: 13px; ">Cancel</a>
+                                <button id="dynadot_hosting_button " class="btn btn-primary add-name-server " style="padding:8px 10px;margin-left: 5px;margin-top: 3px; ">Use Dynadot Hosting</button>
+                            </div>
+
+                        </div>
+                    <!-- Custom DNS -->
+                       <div id="select_custom_dns" style="display: none; ">
+                            <div class="col-xs-12 " style="margin-top: 8px; ">
+                            Use our name servers,but specify your own DNS records.
+                            </div>
+                           <div class="col-xs-12 " style="margin-top: 25px; ">
+                            <span style="font-size: 15px;font-weight: 600; ">Domain Record (required)</span>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="For A Records, enter a Subdomain and an IP Address. You can use * for a Subdomain wildcard.For CNAME Records enter a Subdomain and a Target Host. CNAMEs should only be used if you can 't use an A Record.For Forwarding, enter a Subdomain and a Webpage (ie http://www.mysite.com/me.html). Your Subdomain will forward to the Webpage.For AAAA Records, enter a Subdomain and an IP Address."> <span class="fa fa-question-circle" style="color: #0078BD;margin-left: 3px;"></span></a>
+
+                            </div>
+                            <div class="list-underline_buttom_select col-xs-12" style="margin-top: 8px;"></div>
+                            
+                            <div class="col-xs-12 custom_dns_content_title" >
+                                <div class="col-xs-3" >
+                                    Record Type
+                                </div>
+                                <div class="col-xs-9" style="padding-left: 0px;">
+                                    IP Address or Target Host
+                                </div>
+
+                                </div>
+                    <div id="domain_record_content">
+                        <div class="col-xs-12 custom_dns_content" >
+                          <div class="col-xs-3">        
+                            <div style="margin-left: -9px;">
+                                <select class="SlectBox" id="selectRecordType" name="glue_dns_domain_type_0" style="background: #fff;">
+                                    <option value="1">Select Type</option>
+                                    <option value="2">A</option>
+                                    <option value="3">CNAME</option>
+                                    <option value="4">Foward</option>
+                                    <option value="5">AAAA</option>
+                                    <option value="6">TXT</option>
+                                </select>
+                                </div>
+                           
+                         </div>
+                         <div class="col-xs-9" style="padding-right: 0px;padding-left: 0px;">
+                                <input type="text" name="glue_dns_domain_val_0" class="form-control" id="stealth_forward_text" style="width: 95%;">    
+                                <!-- <span class="fa fa-trash-o delete_domain_record"></span> -->
+                         </div>
+                        </div>
+
+
+                         <div class="col-xs-12 custom_dns_content" >
+                          <div class="col-xs-3">        
+                            <div style="margin-left: -9px;">
+                                <select class="SlectBox" id="selectRecordType1"  name="glue_dns_domain_type_1" style="background: #fff;">
+                                    <option value="1">Select Type</option>
+                                    <option value="2">A</option>
+                                    <option value="3">CNAME</option>
+                                    <option value="4">Foward</option>
+                                    <option value="5">AAAA</option>
+                                    <option value="6">TXT</option>
+                                </select>
+                                </div>
+                           
+                         </div>
+                             <div class="col-xs-9" style="padding-right: 0px;padding-left: 0px;">
+                                    <input type="text" name="glue_dns_domain_val_1"  class="form-control" id="stealth_forward_text" style="width: 95%;">    <span class="fa fa-trash-o delete_domain_record"></span>
+                             </div>
+                            </div>
+
+                        </div>
+
+
+
+            
+                            <div class="col-xs-12" style="margin-top: 10px;">
+                                <a href="#" style="text-decoration: none;" id="add_select_domain_record">Add Record</a>
+                            </div>
+
+                            <div class="col-xs-12" style="margin-top: 25px;">
+                            <span style="font-size: 15px;font-weight: 600;">Subdomain Records (optional)</span>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Create subdomains for your domain. For example www.mydomain.com or blog.mydomain.com."> <span class="fa fa-question-circle" style="color: #0078BD;margin-left: 3px;"></span></a>
+
+                            </div>
+
+                            
+                          
+                             <div class="list-underline_buttom_select col-xs-12" style="margin-top: 8px;"></div>
+
+                            
+                        <div class="col-xs-12 custom_dns_content_title" >
+                            <div class="col-xs-3" >
+                                    Subdomain
+                                </div>
+                                <div class="col-xs-3" style="padding-left: 2px;">
+                                    Record Type
+                                </div>
+                                <div class="col-xs-6" style="padding-left:0px;" >
+                                    IP Address or Target Host
+                                </div>
+
+                         </div>
+
+
+                    <div id="subdomain_record_content">
+
+                        <div class="col-xs-12 custom_dns_content" >
+
+                        <div class="col-xs-3">
+                         <input type="text" name="glue_dns_sub_name_0" class="form-control subdomain_form" id="subdomain_record_text">    
+
+                        </div>
+                          <div class="col-xs-3" style="padding-left: 1px;">        
+                            <div style="margin-left: -9px;">
+                                <select class="SlectBox" id="selectSubdomainRecordType" name="glue_dns_sub_type_0" style="background: #fff;">
+                                    <option value="1">Select Type</option>
+                                    <option value="2">A</option>
+                                    <option value="3">CNAME</option>
+                                    <option value="4">Foward</option>
+                                    <option value="5">AAAA</option>
+                                    <option value="6">TXT</option>
+                                </select>
+                                </div>
+                           
+                         </div>
+
+                         <div class="col-xs-6" style="padding-right: 0px;padding-left: 0px;margin-left: -3px;">
+                                <input type="text" name="glue_dns_sub_val_0" class="form-control" id="stealth_forward_text" style="width: 93%;">    
+                                <span class="fa fa-trash-o delete_subdomain_record"></span>
+                         </div>
+                        </div>
+
+                      </div>
+
+
+
+                           <div class="col-xs-12" style="margin-top: 10px;">
+                                <a href="#" style="text-decoration: none;" id="add_select_subdomain_record">Add Record</a>
+                            </div>
+
+
+
+
+                            <div class="col-xs-12" style="margin-top: 25px;">
+                            <span style="font-size: 15px;font-weight: 600;">MX Records (optional)</span>
+                            <a href="#" data-toggle="tooltip" data-placement="top" title='Specify the mail host for your domain. Distance 0 is highest priority.If you enter MX records for your DNS here, you will need to make sure that the "Email Forwarding Settings" are set to the "Do not forward email." option first. '> <span class="fa fa-question-circle" style="color: #0078BD;margin-left: 3px;"></span></a>
+                            
+                            </div>
+
+
+
+                             <div class="list-underline_buttom_select col-xs-12" style="margin-top: 8px;"></div>
+                            <div class="col-xs-12" style="margin-top: 5px;padding-left: 0px;">
+                                <div class="col-xs-10"  >
+                                    Mail Host
+                                </div>
+                                <div class="col-xs-2" style="padding-left: 0px;" >
+                                    Distance
+                                </div>
+
+                            </div>
+
+                        <div id="mx_record_content">
+                            <div class="col-xs-12" style="padding-left:0px; margin-top: 8px;">
+
+                            <div class="col-xs-10">
+                             <input type="text" name="glue_dns_mx_host_0" class="form-control" id="stealth_forward_text">    
+
+                            </div>
+                        
+                              <div class="col-xs-2" style="padding-left: 0px;">
+                                    <input type="text" name="glue_dns_mx_dist_0" class="form-control" id="stealth_forward_text" style="width: 88%;" >    
+                                    <span class="fa fa-trash-o delete_mx_record"></span>
+                             </div>
+                         </div>
+
+
+                       </div>
+
+                        <div class="col-xs-12" style="margin-top: 10px;">
+                                <a href="#" style="text-decoration: none;" id="add_select_mx_record">Add Record</a>
+                            </div>
+
+
+                        <div class="col-xs-12" style="margin-top: 25px;">
+                            <span style="font-size: 15px;font-weight: 600;">Time to Live (TTL) (optional)</span>
+
+                            <a href="#" data-toggle="tooltip" data-placement="top" title='Specify the TTL for all of your DNS records for your domain. TTL will be 3 hours if this is not set. '> <span class="fa fa-question-circle" style="color: #0078BD;margin-left: 3px;"></span></a>
+                            
+                        </div>
+                             <div class="list-underline_buttom_select col-xs-12" style="margin-top: 8px;"></div>
+                             <div class="col-xs-12" style="margin-top: 8px;">
+                                 Time
+                             </div>
+                             <div class="col-xs-12">        
+                               <div style="width: 120px;margin-left: -9px;">
+                                <select class="SlectBox" id="selectTime" name ="glue_dns_ttl" style="background: #fff;">
+                                    <option >Select </option>
+                                    <option value="300">5 minutes</option>
+                                    <option value="600">10 minutes</option>
+                                    <option value="1800">30 minutes</option>
+                                    <option value="3600">1 hour</option>
+                                    <option value="7200">2 hours</option>
+                                    <option value="14400">4 hours</option>
+                                    <option value="28800">8 hours</option>
+                                    <option value="86400">1 day</option>
+                                    <option value="172800">2 days</option>
+                                    <option value="345600">4 days</option>
+                                    <option value="604800">1 week</option>
+                                    <option value="1209600">2 weeks</option>
+                                </select>
+                                </div>
+                           
+                         </div>
+
+
+                          <div class="list-underline_buttom_select col-xs-12"></div>
+                            <div class="edit_name_servers_function_button col-xs-12">
+                                <a class="btn btn-default" id="custom_dns_cancel" href="#" style="margin-top: 3px;color: #0078bd;padding:8px 15px;font-size: 13px;">Cancel</a>
+                                <button id="register_name_server_button" disabled="true" class="btn btn-primary" style="padding:8px 10px;font-size: 13px;margin-left: 5px;margin-top: 3px;color: #828EA6;background: #F5F6F7;border-color: #D3DBE2;">Save DNS</button>
+                            </div>
+
+                       </div>
+
+                    <!-- Free Hosting -->
+                         <div id="select_free_hosting" style="display: none;">
+                              <div class="col-xs-12 dns_name_servers">
+                                    Please enter text for the title and body. HTML is allowed but the following tags should not be included, &lt;html&gt;,&lt;title&gt;,&lt;body&gt;,&lt;meta&gt;,&lt;script&gt;.
+                                    Please note that any HTML entered in the body is not validated.
+                                </div>
+                                <div class="col-xs-12 " style="margin-top: 15px; ">
+                                   Style
+                                </div>
+
+
+                                <div class="col-xs-12 " style="margin-top: 3px; ">
+                                    <div style="width: 198px;margin-left: -9px;">
+                                    <select class="SlectBox" id="selectStyle" >
+                                    <option >None</option>
+                                    <option value="1">Style One</option>
+                                    <option value="2">Style Two</option>
+                                    <option value="3">Style Three</option>
+                                    <option value="4">Style Four</option>
+                                    <option value="5">Style Five</option>
+                                    <option value="6">Style Six</option>
+                                    </select>
+                                </div>
+
+                                </div>
+                                <div class="col-xs-12 " style="margin-top: 15px; ">
+                                   Title
+                                </div>
+                                <div class="col-xs-12" style="margin-top: 3px;">
+                                    <input type="text" name="" class="form-control" id="stealth_forward_text">   
+
+                                </div>
+                                
+                                <div class="col-xs-12 " style="margin-top: 15px; ">
+                                   Body
+                                </div>
+                                <div class="col-xs-12" style="margin-top: 3px;">
+                                    <textarea name="" class="form-control" rows="3" id="stealth_forward_text" style="height: 200px;">   </textarea>
+
+                                </div>
+
+                                <div class="list-underline_buttom_select col-xs-12"></div>
+                                <div class="edit_name_servers_function_button col-xs-12">
+
+                                    <a class="btn btn-default" id="free_hosting_cancel" href="#" style="margin-top: 3px;color: #0078bd;padding:8px 15px;font-size: 13px;">Cancel</a>
+                                    <button id="register_name_server_button" disabled="true" class="btn btn-primary" style="padding:8px 10px;font-size: 13px;margin-left: 5px;margin-top: 3px;color: #828EA6;background: #F5F6F7;border-color: #D3DBE2;">Use Free Hosting</button>
+
+                                   
+                                   <!--  <button id="register_name_server_button" disabled="true" class="btn btn-primary" style="padding:8px 10px;font-size: 13px;margin-left: 5px;margin-top: 3px;color: #828EA6;background: #F5F6F7;border-color: #D3DBE2;">Save and Preview</button> -->
+
+                                </div>
+
+
+
+                         </div>
+                         <!-- Site Builder -->
+
+                         <div id="select_site_builder" style="display: none;">
+                             <div class="col-xs-12 dns_name_servers">
+                                    Create a robust website with a just a few clicks. Our website builder tools are intuitive and require no coding. Our style editor allows you to create a unique site with customizable settings for fonts, colors, transparencies, and page configurations.Just click and drag your way to the perfect website.
+                                </div>
+                                <div class="col-xs-12 " style="margin-top: 15px; ">
+                                   View your full list of Website Builders <a href="#" style="text-decoration: none;">here</a>.
+                                </div>
+
+
+                                 <div class="list-underline_buttom_select col-xs-12"></div>
+                                 <div class="edit_name_servers_function_button col-xs-12">
+                                <a class="btn btn-default" id="site_builder_cancel" href="#" style="margin-top: 3px;color: #0078bd;padding:8px 15px;font-size: 13px;">Cancel</a>
+                                <button id="register_name_server_button" class="btn btn-primary add-name-server" style="padding:8px 10px;margin-left: 5px;margin-top: 3px;">Create Site</button>
+
+                                <!--  <a id="register_name_server_button" class="btn btn-primary add-name-server" style="padding:8px 10px;margin-left: 5px;margin-top: 3px;">Manage Site</a> -->
+                            </div>
+
+                         </div>
+
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

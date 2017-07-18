@@ -1,0 +1,213 @@
+.SumoSelect p {
+    margin: 0;
+}
+
+.SelectBox {
+    padding: 5px 8px;
+}
+
+.sumoStopScroll {
+    overflow: hidden;
+}
+
+.SumoSelect .hidden {
+    display: none;
+}
+
+.SumoSelect .search-txt {
+    display: none;
+    outline: none;
+}
+
+.SumoSelect .no-match {
+    display: none;
+    padding: 6px;
+}
+
+.SumoSelect.open .search-txt {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 5px 8px;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.SumoSelect.open>.search>span,
+.SumoSelect.open>.search>label {
+    visibility: hidden;
+}
+
+.SelectClass,
+.SumoUnder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+
+/*.SelectClass {
+    z-index: 1;
+    #f3f4f6
+}*/
+
+.SumoSelect > .optWrapper > .options li.opt label,
+.SumoSelect > .CaptionCont,
+.SumoSelect .select-all > label {
+    user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.SumoSelect {
+    display: inline-block;
+    position: relative;
+    outline: none;
+    margin-left: 7px;
+    width: 93%;
+}
+
+.SumoSelect:focus > .CaptionCont,
+.SumoSelect:hover > .CaptionCont,
+.SumoSelect.open > .CaptionCont {
+    box-shadow: 0 0 2px #4BB0EF;
+    border-color: #4BB0EF;
+}
+
+.SumoSelect > .CaptionCont {
+    position: relative;
+    border: 1px solid #d3dbe3;
+    height: 34px;
+    background-color: #f5f6f7;
+    border-radius: 3px;
+    margin: 0;
+    padding-left: 10px;
+    color: #1a1a19;
+}
+
+.SumoSelect > .CaptionCont > span {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: default;
+    /*margin-top: -4px;*/
+}
+
+.SumoSelect > .CaptionCont > label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+}
+
+.SumoSelect > .CaptionCont > label > i {
+    background-image: url(../img/arrow.png);
+    background-position: center center;
+    background-size: 9px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+.SumoSelect > .optWrapper {
+    display: none;
+    z-index: 1000;
+    top: 30px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.11);
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+}
+
+.SumoSelect.open > .optWrapper {
+    top: 34px;
+    display: block;
+}
+
+.SumoSelect.open > .optWrapper.up {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 5px;
+}
+
+.SumoSelect > .optWrapper ul {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+
+.SumoSelect > .optWrapper > .options {
+    border-radius: 2px;
+    position: relative;
+    max-height: 215px;
+}
+
+.SumoSelect > .optWrapper > .options li ul li.opt {
+    padding-left: 22px;
+}
+
+.SumoSelect > .optWrapper.multiple > .options li ul li.opt {
+    padding-left: 50px;
+}
+
+.SumoSelect > .optWrapper > .options li.opt {
+    position: relative;
+    border-radius: 2px;
+    height: 30px;
+}
+
+.SumoSelect > .optWrapper > .options li.opt:hover {
+    background-color: #0076BF;
+    color: #fff;
+}
+
+.SumoSelect > .optWrapper > .options li label {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+    padding-left: 10px;
+    line-height: 30px;
+}
+
+.SumoSelect > .optWrapper > .options li span {
+    display: none;
+}
