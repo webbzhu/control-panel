@@ -1,0 +1,46 @@
+table.watchlist-table>thead>tr>td {
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.watchlist-section-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.watchlist-table-container {
+    background-color: #fff;
+    padding: 5px 20px;
+    box-shadow: 0px 1px 4px #a1a1a1;
+    padding-top: 20px;
+    border-radius: 3px;
+}
+
+.checkbox-label {
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    border: 1px solid #DAE3E9;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 20px;
+    margin-top: 2px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox-label.checkbox-label-domain {
+    margin-left: 6px;
+    margin-right: 16px;
+}
+
+input[type='checkbox']:checked + label.checkbox-label:after {
+    content: "\f00c";
+    color: #0076BF;
+    font-family: FontAwesome;
+    position: relative;
+    top: -4px;
+}
